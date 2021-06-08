@@ -1,16 +1,23 @@
-R = NULL
-x = NULL
-
-print("hello")
+print("Hello World!")
 
 # Inputs
-R = int(input("Enter radius of circle :"))
-x = int(input("Enter distance of P from the centre of ring :"))
-Q = int(input("Enter Charge of Ring :"))
+R = float(input("R = "))
+x = float(input("x = "))
+Q = float(input("Q = "))
 
 # Constants
 k = (9*(10**9))
+E = ((k*Q*x)/(((R**2)+(x**2))**(3/2)))
 
-E = (k*Q*x)/(((R**2)+(x**2)**(3/2))
+# Scientific Notation
 
-print("The Magnitude of electric field is %d", E)
+E1 = E
+E2 = 0
+
+while(E1 > 10):
+    E1 = E1/10
+    E2 = E2 + 1
+
+# Result
+# print(f"The magnitude of Electric Field is {E}")
+print(f"\nE = {E1} x 10^{E2}")
