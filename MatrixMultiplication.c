@@ -1,5 +1,3 @@
-/* Exercise 10 */
-
 /* 
 
 MATRIX MULTIPLICATION
